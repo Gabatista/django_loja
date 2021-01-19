@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'produto',
+    'pedido',
+    'perfil',
 
     # TODO: REMOVER TOOLBAR
     'debug_toolbar'
