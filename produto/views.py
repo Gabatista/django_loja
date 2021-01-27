@@ -7,7 +7,6 @@ from django.views import View
 from . import models
 from perfil.models import Perfil
 
-from pprint import pprint
 
 class ListaProdutos(ListView):
     model = models.Produto
@@ -25,11 +24,6 @@ class ProdutoDetalhes(DetailView):
 
 class AdicionarCarrinho(View):
     def get(self, *args, **kwargs):
-        #excluindo carrinho
-      #if self.request.session.get('carrinho'):
-      #  del self.request.session['carrinho']
-      #  self.request.session.save()
-
 
         http_referer = self.request.META.get('HTTP_REFERER',reverse('produto:lista'))
         variacao_id = self.request.GET.get('vid')

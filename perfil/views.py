@@ -6,6 +6,8 @@ from . import models
 from . import forms
 import copy
 from django.contrib.auth import authenticate, login, logout
+from django.contrib import messages
+from django.contrib.auth.models import User
 
 class BasePerfil(View):
     template_name = 'perfil/criar.html'
