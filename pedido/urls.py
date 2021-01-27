@@ -8,5 +8,6 @@ urlpatterns = [
     path('salvarpedido', views.SalvarPedido.as_view(), name="salvarpedido"),
     path('detalhe/<int:pk>', views.DetalhesPedido.as_view(), name="detalhe"),
     path('lista/', views.Lista.as_view(), name="lista"),
+    path('busca/', views.Busca.as_view(), name="busca"),
 
 ]
